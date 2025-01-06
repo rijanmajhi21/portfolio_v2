@@ -3,7 +3,7 @@ import Button from "../commons/buttons/button";
 
 const Home: FunctionComponent = () => {
   return (
-    <section className="c-container mx-auto h-[100vh] my-0 flex fixed inset-[0%] overflow-hidden">
+    <section className="c-container px-0 mx-auto h-[100vh] my-0 flex fixed inset-[0%] overflow-hidden">
       <div className="flex flex-col justify-center h-[100vh] mx-auto">
         <div className="flex flex-col mb-10 overflow-hidden">
           <span className="text-title-5 text-center">

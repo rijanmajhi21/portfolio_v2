@@ -14,7 +14,7 @@ const NavLink: FunctionComponent<{
     <Link
       href={href}
       target={target}
-      className="text-body-base cursor-pointer px-8 transition transform hover:-translate-y-1 duration-300"
+      className="text-body-base cursor-pointer px-4 transition transform hover:-translate-y-1 duration-300"
     >
       {text}
     </Link>
@@ -23,16 +23,26 @@ const NavLink: FunctionComponent<{
 
 const Header: FunctionComponent = () => {
   const links = [
-    { href: "https://www.linkedin.com", text: "LinkedIn" },
     { href: "/arts", text: "Arts" },
-    { href: "/contact", text: "Contact  Me" },
+    { href: "https://www.linkedin.com", text: "LinkedIn" },
+    { href: "", text: "Contact Me" },
   ];
 
   return (
-    <section className="c-container mx-aut0 fixed top-0 bg-pure-white py-6 w-full z-[999]">
-      <div className="relative flex items-center justify-between w-full">
-        <Image src="/images/logo.png" alt="Logo" height={80} width={150} />
-        <div className="flex items-center">
+    <nav className="c-container mx-auto fixed top-0 left-0 right-0 bg-pure-white py-6 z-[999]">
+      <div className="flex items-center justify-between">
+        <Link href="/">
+          <Image
+            src="/images/logo.png"
+            layout="intrinsic"
+            alt="Logo"
+            height={70}
+            width={125}
+            className="h-full w-auto"
+          />
+        </Link>
+
+        <div className="flex items-center space-x-8">
           {links.map((link, index) => (
             <NavLink key={index} href={link.href} text={link.text} />
           ))}
@@ -43,7 +53,7 @@ const Header: FunctionComponent = () => {
           />
         </div>
       </div>
-    </section>
+    </nav>
   );
 };
 

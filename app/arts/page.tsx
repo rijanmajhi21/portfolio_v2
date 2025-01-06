@@ -6,8 +6,10 @@ const ArtPage = () => {
   return (
     <main className="c-container mx-auto">
       <Header />
-      <ArtContainer />
-      <ArtGallery />
+      <div className="">
+        <ArtContainer />
+        <ArtGallery />
+      </div>
     </main>
   );
 };

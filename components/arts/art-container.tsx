@@ -3,7 +3,7 @@ import Button from "../commons/buttons/button";
 
 const ArtContainer:FunctionComponent = () => {
   return (
-    <section className="c-container mx-auto">
+    <section className="mx-auto">
       <div className="flex flex-col fixed justify-center items-start h-[100vh] w-[30%] top-0 overflow-visible">
         <h5 className="">GALLERY</h5>
         <div className="mt-0 mb-6">
