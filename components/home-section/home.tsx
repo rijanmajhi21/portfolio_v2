@@ -22,7 +22,7 @@ const Home: FunctionComponent = () => {
           </div>
         </div>
         <div className="absolute flex items-center bottom-24 gap-5 left-1/2 transform -translate-x-1/2 z-10">
-          <Button variant="dark" text="You need  developer" href="" />
+          <Button variant="dark" text="You need a developer" href="" />
           <Button variant="light" text="You need an artist" href="" />
         </div>
       </div>

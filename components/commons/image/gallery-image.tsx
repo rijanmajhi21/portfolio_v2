@@ -10,20 +10,20 @@ type GalleryImageProps = {
 
 const GalleryImage = ({ src, alt, title, href }: GalleryImageProps) => {
   return (
-    <div className="relative w-full h-full overflow-hidden rounded-2xl group">
+    <div className="relative w-full overflow-hidden rounded-2xl group">
       <Link href={href}>
-        <div className="relative w-full h-full transform transition-all duration-500 ease-in-out group-hover:scale-110">
-          <Image
-            src={src}
-            alt={alt}
-            layout="responsive"
-            width={600}
-            height={400}
-            objectFit="cover"
-          />
+        <div className="relative w-full pb-[100%] hover:pb-[120%] transition-all duration-500 ease-in-out group-hover:scale-110">
+          <div className="absolute top-0 left-0 w-full h-full">
+            <Image
+              src={src}
+              alt={alt}
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
         </div>
       </Link>
-      <div className="absolute bottom-3 left-4 text-white font-anton text-[28px] opacity-90">
+      <div className="absolute bottom-4 left-4 text-white font-anton text-sm sm:text-lg md:text-xl lg:text-2xl opacity-90">
         {title}
       </div>
     </div>

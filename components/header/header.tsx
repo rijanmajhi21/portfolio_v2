@@ -9,7 +9,7 @@ const NavLink: FunctionComponent<{
   href: string;
   text: string;
   target?: string;
-}> = ({ href, text, target = "_blank" }) => {
+}> = ({ href, text, target = "_self" }) => {
   return (
     <Link
       href={href}
@@ -23,6 +23,7 @@ const NavLink: FunctionComponent<{
 
 const Header: FunctionComponent = () => {
   const links = [
+    { href: "/projects", text: "Projects" },
     { href: "/arts", text: "Arts" },
     { href: "https://www.linkedin.com", text: "LinkedIn" },
     { href: "", text: "Contact Me" },

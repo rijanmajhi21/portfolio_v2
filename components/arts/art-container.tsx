@@ -5,7 +5,7 @@ const ArtContainer:FunctionComponent = () => {
   return (
     <section className="mx-auto">
       <div className="flex flex-col fixed justify-center items-start h-[100vh] w-[30%] top-0 overflow-visible">
-        <h5 className="">GALLERY</h5>
+        <h5 className="uppercase">gallery</h5>
         <div className="mt-0 mb-6">
           <span className="font-anton text-[3vw] text-neutral-900">
             Sketching the extraordinary.
