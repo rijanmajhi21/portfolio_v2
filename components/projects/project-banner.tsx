@@ -13,7 +13,7 @@ const ProjectBanner = () => {
             Artistic websites for modern brands.
           </span>
         </div>
-        <Button variant="light" text="Let's atart a project together" href="" />
+        <Button variant="light" text="Let's start a project together" href="" />
       </div>
     </section>
   );

@@ -25,8 +25,7 @@ const Header: FunctionComponent = () => {
   const links = [
     { href: "/projects", text: "Projects" },
     { href: "/arts", text: "Arts" },
-    { href: "https://www.linkedin.com", text: "LinkedIn" },
-    { href: "", text: "Contact Me" },
+    { href: "/contact", text: "Contact Me" },
   ];
 
   return (

@@ -39,7 +39,6 @@ const config: Config = {
       fontFamily: {
         Roboto: ["var(--font-Roboto)", "system-ui", "sans-serif"],
         inter: ["var(--font-inter)", "system-ui", "sans-serif"],
-        mediaSans: ["Media Sans Semicondensed", "Impact", "sans-serif"],
         anton: ["Anton"],
       },
       colors: {
