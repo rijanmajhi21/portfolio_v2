@@ -37,8 +37,6 @@ const config: Config = {
         "3xl": "1600px",
       },
       fontFamily: {
-        Roboto: ["var(--font-Roboto)", "system-ui", "sans-serif"],
-        inter: ["var(--font-inter)", "system-ui", "sans-serif"],
         anton: ["Anton"],
       },
       colors: {

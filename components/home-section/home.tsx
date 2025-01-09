@@ -1,7 +1,12 @@
-import { FunctionComponent } from "react";
+'use client';
+
+import clsx from "clsx";
+import { FunctionComponent, useState } from "react";
 import Button from "../commons/buttons/button";
 
 const Home: FunctionComponent = () => {
+  const [hovered, setHovered] = useState<"frontend" | "art" | null>(null);
+
   return (
     <section className="c-container px-0 mx-auto h-[100vh] my-0 flex fixed inset-[0%] overflow-hidden">
       <div className="flex flex-col justify-center h-[100vh] mx-auto">
@@ -9,11 +14,31 @@ const Home: FunctionComponent = () => {
           <span className="text-title-5 text-center">
             👋, my name is Rijan and I am a frontend developer
           </span>
-          <div className="flex flex-col mt-5 text-center group w-full pb-2">
-            <span className="font-anton mx-auto text-[11vw] text-neutral-900 leading-[1.15] group-hover:text-stroke cursor-pointer transition-all duration-300">
+          <div className="flex flex-col mt-5 text-center w-full pb-2">
+            <span
+              className={clsx(
+                "font-anton mx-auto text-[11vw] leading-[1.15] cursor-pointer transition-all duration-300",
+                {
+                  "text-neutral-900": hovered === "frontend" || hovered === null,
+                  "text-stroke": hovered === "art",
+                }
+              )}
+              onMouseEnter={() => setHovered("frontend")}
+              onMouseLeave={() => setHovered(null)}
+            >
               Frontend
             </span>
-            <span className="block whitespace-nowrap font-anton mx-auto text-[11vw] text-stroke leading-[1.15] group-hover:text-neutral-900 hover:text-neutral-900 transition-all duration-300 cursor-pointer">
+            <span
+              className={clsx(
+                "block whitespace-nowrap font-anton mx-auto text-[11vw] leading-[1.15] cursor-pointer transition-all duration-300",
+                {
+                  "text-neutral-900": hovered === "art",
+                  "text-stroke": hovered !== "art",
+                }
+              )}
+              onMouseEnter={() => setHovered("art")}
+              onMouseLeave={() => setHovered(null)}
+            >
               & Art Enthusiast
             </span>
           </div>
