@@ -11,7 +11,7 @@ interface ButtonProps {
 }
 
 const Button: FunctionComponent<ButtonProps> = ({ variant = 'dark', text, href, className = '' }) => {
-  const commonStyles = "flex h-auto w-auto px-6 py-3 rounded-md items-center justify-center cursor-pointer transition-all duration-300 hover:shadow-base";
+  const commonStyles = "flex h-auto text-center w-auto px-6 py-3 rounded-md items-center justify-center cursor-pointer transition-all duration-300 hover:shadow-base";
 
   const variantStyles = variant === 'dark'
     ? "bg-neutral-950 text-white hover:px-8"
