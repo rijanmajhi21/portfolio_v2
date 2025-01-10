@@ -397,7 +397,7 @@ const config: Config = {
       spin: "spin 1s linear infinite",
       "non-spin": "non-spin 1s linear infinite",
       blink: "blinker 1s linear infinite",
-      "slide-in": "slide-in 150ms ease-in;",
+      "slide-in": "slide-in 500ms ease-in;",
       "slide-right-to-left": "slide-right-to-left 150ms ease-in",
       "slide-left-to-right": "slide-left-to-right 150ms ease-in",
       "scale-in": "scale-in 0.5s cubic-bezier(0.4, 0, 0.2, 1)",

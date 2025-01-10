@@ -1,6 +1,7 @@
 "use client";
 
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"; // Add Heroicons
+import { ArrowRightCircleIcon } from "@heroicons/react/16/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import { FunctionComponent, useState } from "react";
@@ -10,14 +11,16 @@ const NavLink: FunctionComponent<{
   href: string;
   text: string;
   target?: string;
-}> = ({ href, text, target = "_self" }) => {
+  withArrow?: boolean;
+}> = ({ href, text, target = "_self", withArrow = false }) => {
   return (
     <Link
       href={href}
       target={target}
-      className="text-body-base cursor-pointer px-4 transition transform hover:-translate-y-1 duration-300"
+      className="flex items-center justify-between w-full lg:px-10 lg:py-2 py-4 font-anton lg:font-sans text-[3vh] lg:text-body-base cursor-pointer transition transform hover:-translate-y-1 duration-300 lg:border-none border-b border-neutral-200 animate-scale-in"
     >
-      {text}
+      <span className="flex flex-wrap">{text}</span>
+      {withArrow && <ArrowRightCircleIcon className="h-8 w-8 text-neutral-900" />}
     </Link>
   );
 };
@@ -28,12 +31,12 @@ const Header: FunctionComponent = () => {
   const links = [
     { href: "/projects", text: "Projects" },
     { href: "/arts", text: "Arts" },
-    { href: "/contact", text: "Contact Me" },
+    { href: "/contact", text: "Contact" },
   ];
 
   const mobileLinks = [
     ...links,
-    { href: "/about", text: "About Me" },
+    { href: "/about", text: "About" },
   ];
 
   return (
@@ -52,7 +55,7 @@ const Header: FunctionComponent = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="hidden lg:flex lg:items-center">
           {links.map((link, index) => (
             <NavLink key={index} href={link.href} text={link.text} />
           ))}
@@ -71,9 +74,9 @@ const Header: FunctionComponent = () => {
             className="text-black focus:outline-none"
           >
             {isMenuOpen ? (
-              <XMarkIcon className="h-8 w-8" />
+              <XMarkIcon className="h-8 w-8 animate-scale-in" />
             ) : (
-              <Bars3Icon className="h-8 w-8" />
+              <Bars3Icon className="h-8 w-8 animate-scale-in" />
             )}
           </button>
         </div>
@@ -81,10 +84,15 @@ const Header: FunctionComponent = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-20 left-0 right-0 bg-pure-white shadow-lg">
-          <div className="flex flex-col items-center space-y-4 py-4">
+        <div className="c-container lg:hidden absolute top-20 left-0 right-0 bg-pure-white shadow-lg">
+          <div className="flex flex-col items-center">
             {mobileLinks.map((link, index) => (
-              <NavLink key={index} href={link.href} text={link.text} />
+              <NavLink
+                key={index}
+                href={link.href}
+                text={link.text}
+                withArrow
+              />
             ))}
           </div>
         </div>
