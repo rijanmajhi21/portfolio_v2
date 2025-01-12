@@ -9,7 +9,7 @@ const Home: FunctionComponent = () => {
   const [hovered, setHovered] = useState<"frontend" | "art" | null>(null);
 
   return (
-    <section className="c-container top-32 mx-auto sm:top-[15%] md:top-[20%] px-0 left-0 right-0 flex sm:flex-none justify-center items-center fixed lg:inset-[0%] overflow-hidden">
+    <section className="c-container mx-auto top-[12%] xs:top-[15%] sm:top-[18%] md:top-[20%] px-0 left-0 right-0 flex sm:flex-none justify-center items-center fixed lg:inset-[0%] overflow-hidden">
       <div className="flex flex-col gap-[5%] items-center justify-center pb-[78%] xs:pb-[40%] sm:pb-[20%] md:pb-0 px-4 mx-0 lg:mx-auto lg:h-[80vh]">
         <div className="flex flex-col mb-4 overflow-hidden">
           <span className="text-body-base md:text-body-big-bold lg:text-title-5 text-center">
