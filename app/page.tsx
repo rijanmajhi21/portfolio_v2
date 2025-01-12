@@ -3,7 +3,8 @@ import Home from "@/components/home-section/home";
 
 export const metadata = {
   title: "Rijan | Portfolio",
-  description: "Explore the creative work of Rijan Majhi, a frontend developer and artist.",
+  description:
+    "Explore the creative work of Rijan Majhi, a frontend developer and artist.",
 };
 
 const HomePage = () => {
