@@ -11,10 +11,10 @@ const ArtPage = () => {
   return (
     <main className="c-container mx-auto">
       <Header />
-      <>
+      <div className="flex flex-col relative md:flex-none justify-between gap-8">
         <ArtContainer />
         <ArtGallery />
-      </>
+      </div>
     </main>
   );
 };

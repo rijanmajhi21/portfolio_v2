@@ -12,7 +12,7 @@ const GalleryImage = ({ src, alt, title, href }: GalleryImageProps) => {
   return (
     <div className="relative w-full overflow-hidden rounded-2xl group">
       <Link href={href}>
-        <div className="relative w-full pb-[100%] hover:pb-[120%] transition-all duration-500 ease-in-out group-hover:scale-110">
+        <div className="relative w-full pb-[110%] lg:pb-[100%] md:pb-[110%] lg:hover:pb-[120%] transition-all duration-500 ease-in-out group-hover:scale-110">
           <div className="absolute top-0 left-0 w-full h-full">
             <Image
               src={src}
