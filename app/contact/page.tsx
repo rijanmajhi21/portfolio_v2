@@ -11,13 +11,9 @@ const ContactPage = () => {
   return (
     <main className="c-container mx-auto">
       <Header />
-      <div className="flex">
-        <div className="w-full">
-          <ContactContainer />
-        </div>
-        <div className="w-full">
-          <ContactForm />
-        </div>
+      <div className="flex flex-col relative md:flex-none justify-between gap-8">
+        <ContactContainer />
+        <ContactForm />
       </div>
     </main>
   );
