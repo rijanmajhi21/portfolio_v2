@@ -24,7 +24,7 @@ const GalleryImage = ({ src, alt, title, href }: GalleryImageProps) => {
           </div>
         </div>
       </Link>
-      <div className="absolute bottom-4 left-4 text-white font-anton text-sm sm:text-lg md:text-xl lg:text-2xl opacity-90">
+      <div className="absolute bottom-4 left-4 text-white font-anton text-[6vw] sm:text-[5vw] md:text-[3vw] lg:text-[2vw] opacity-90">
         {title}
       </div>
     </div>

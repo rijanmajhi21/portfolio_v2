@@ -11,8 +11,7 @@ const ProjectBottomBanner: FunctionComponent = () => {
           src="/images/coding.png"
           alt="Bottom Banner Image"
           className="absolute inset-0 h-full w-full object-cover"
-          layout="fill"
-          priority
+          fill
         />
         <div className="c-container absolute inset-0 flex flex-col gap-6 items-center justify-center text-center">
           <div className="font-anton text-pure-white text-[6vw] md:text-[3.5vw] lg:text-[3.5vw]">

@@ -20,7 +20,9 @@ const NavLink: FunctionComponent<{
       className="flex items-center justify-between w-full lg:px-10 lg:py-2 py-4 font-anton lg:font-sans text-[3vh] lg:text-body-base cursor-pointer transition transform hover:-translate-y-1 duration-300 lg:border-none border-b border-neutral-200 animate-scale-in"
     >
       <span className="flex flex-wrap">{text}</span>
-      {withArrow && <ArrowRightCircleIcon className="h-8 w-8 text-neutral-900" />}
+      {withArrow && (
+        <ArrowRightCircleIcon className="h-8 w-8 text-neutral-900" />
+      )}
     </Link>
   );
 };
@@ -34,14 +36,12 @@ const Header: FunctionComponent = () => {
     { href: "/contact", text: "Contact" },
   ];
 
-  const mobileLinks = [
-    ...links,
-    { href: "/about", text: "About" },
-  ];
+  const mobileLinks = [...links, { href: "/about", text: "About" }];
 
   return (
-    <nav className="c-container mx-auto fixed top-0 left-0 right-0 bg-pure-white py-6 z-[999]">
-      <div className="flex items-center justify-between">
+    <div className="w-full fixed top-0 left-0 right-0 bg-pure-white py-6 z-[999]">
+      {/* Navbar content container */}
+      <div className="c-container mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
           <Image
@@ -83,7 +83,7 @@ const Header: FunctionComponent = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="c-container lg:hidden absolute top-20 left-0 right-0 bg-pure-white shadow-lg">
+        <div className="c-container mx-auto lg:hidden absolute top-20 left-0 right-0 bg-pure-white shadow-lg">
           <div className="flex flex-col items-center">
             {mobileLinks.map((link, index) => (
               <NavLink
@@ -96,7 +96,7 @@ const Header: FunctionComponent = () => {
           </div>
         </div>
       )}
-    </nav>
+    </div>
   );
 };
 
