@@ -1,5 +1,6 @@
 import Header from "@/components/header/header";
 import Home from "@/components/home-section/home";
+import Head from "next/head";
 
 export const metadata = {
   title: "Rijan | Portfolio",
@@ -10,6 +11,11 @@ export const metadata = {
 const HomePage = () => {
   return (
     <main className="c-container mx-auto">
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <link rel="icon" href="/favicon.ico?v=2" />
+      </Head>
       <Header />
       <Home />
     </main>
