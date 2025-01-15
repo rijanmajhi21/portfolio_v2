@@ -2,7 +2,6 @@ import Header from "@/components/header/header";
 import ProjectBanner from "@/components/projects/project-banner";
 import BottomBanner from "@/components/projects/Project-bottom-banner";
 import WhyProjectSection from "@/components/projects/why-project-section";
-import Head from "next/head";
 
 export const metadata = {
   title: "Portfolio | Projects",
