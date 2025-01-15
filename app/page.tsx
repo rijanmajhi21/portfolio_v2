@@ -6,6 +6,9 @@ export const metadata = {
   title: "Rijan | Portfolio",
   description:
     "Explore the creative work of Rijan Majhi, a frontend developer and artist.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 const HomePage = () => {
@@ -14,7 +17,7 @@ const HomePage = () => {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
       <Header />
       <Home />
