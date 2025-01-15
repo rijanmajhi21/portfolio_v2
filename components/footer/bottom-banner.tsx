@@ -15,14 +15,14 @@ const BottomBanner: FunctionComponent = () => {
           priority
         />
         <div className="c-container absolute inset-0 flex flex-col gap-6 items-center justify-center text-center">
-          <div className="font-anton text-pure-white text-[3vw]">
+          <div className="font-anton text-pure-white text-[6vw] md:text-[3.5vw] lg:text-[3.5vw]">
             <span className="drop-shadow-md">
               Transform Your Ideas into Reality
             </span>
           </div>
-          <p className="text-body-big text-pure-white drop-shadow-md">
+          <p className="text-body-big text-pure-white drop-shadow-md hidden md:block">
             Let&apos;s work together to create a website <br />
-            that not only stands out but also leaves a lasting impression.{" "}
+            that not only stands out but also leaves a lasting impression.
             <br />
             We&apos;ll combine creativity, functionality, and
             <br />

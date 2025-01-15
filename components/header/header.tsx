@@ -46,7 +46,6 @@ const Header: FunctionComponent = () => {
         <Link href="/">
           <Image
             src="/images/logo.png"
-            layout="intrinsic"
             alt="Logo"
             height={70}
             width={125}
