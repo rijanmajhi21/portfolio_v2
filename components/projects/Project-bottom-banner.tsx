@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FunctionComponent } from "react";
 import Button from "../commons/buttons/button";
 
-const BottomBanner: FunctionComponent = () => {
+const ProjectBottomBanner: FunctionComponent = () => {
   return (
     <section className="flex flex-col">
       <div className="relative h-[190px] w-full overflow-hidden xs:h-[250px] sm:h-[320px] md:h-[380px] lg:h-[500px] ">
@@ -38,4 +38,4 @@ const BottomBanner: FunctionComponent = () => {
   );
 };
 
-export default BottomBanner;
+export default ProjectBottomBanner;
