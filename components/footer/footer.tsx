@@ -12,7 +12,7 @@ const Footer: FunctionComponent = () => {
         </div>
         <div className="text-body-base justify-end">
           <span className="text-pure-white">
-            © 2024 Rijan Majhi | All rights reserved.
+            2024 | Rijan Majhi
           </span>
         </div>
       </div>
