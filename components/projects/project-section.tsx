@@ -4,20 +4,21 @@ import ProjectContainer from "./project-container";
 const PojectSection: FunctionComponent = () => {
   const images = [
     {
-      src: "/images/project-images/cms1.png",
-      alt: "Customer Management System 1",
+      src: "/images/project-images/cms3.png",
+      alt: "Customer Management System",
       title: "Customer Management System",
     },
     {
-      src: "/images/project-images/portfolio.png",
+      src: "/images/project-images/prototype.png",
+      alt: "Prototyping",
+      title: "Sketching Prototyping",
+    },
+    {
+      src: "/images/project-images/pf.png",
       alt: "Portfolio",
       title: "Portfolio",
     },
-    {
-      src: "/images/project-images/cms1.png",
-      alt: "Customer Management System 3",
-      title: "Customer Management",
-    },
+    
   ];
 
   return (
@@ -30,7 +31,7 @@ const PojectSection: FunctionComponent = () => {
             </span>
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between gap-8">
           {images.map((image, index) => (
             <ProjectContainer key={index} src={image.src} alt={image.alt} title={image.title}/>
           ))}
