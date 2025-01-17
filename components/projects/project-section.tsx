@@ -7,16 +7,19 @@ const PojectSection: FunctionComponent = () => {
       src: "/images/project-images/cms3.png",
       alt: "Customer Management System",
       title: "Customer Management System",
+      link: "",
     },
     {
       src: "/images/project-images/prototype.png",
       alt: "Prototyping",
-      title: "Sketching Prototyping",
+      title: "Sketching Prototype",
+      link: "",
     },
     {
       src: "/images/project-images/pf.png",
       alt: "Portfolio",
       title: "Portfolio",
+      link: "",
     },
     
   ];
@@ -33,7 +36,7 @@ const PojectSection: FunctionComponent = () => {
         </div>
         <div className="flex justify-between gap-8">
           {images.map((image, index) => (
-            <ProjectContainer key={index} src={image.src} alt={image.alt} title={image.title}/>
+            <ProjectContainer key={index} src={image.src} alt={image.alt} title={image.title} link={image.link} />
           ))}
         </div>
       </div>

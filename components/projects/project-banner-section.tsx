@@ -10,7 +10,6 @@ const ProjectBannerSection = () => {
               <Image
                 src="/images/project-images/cms1.png"
                 alt="Customer Management System"
-                objectFit="cover"
                 className="rounded-lg inline-block items-center"
                 height={1000}
                 width={500}
@@ -22,7 +21,6 @@ const ProjectBannerSection = () => {
               <Image
                 src="/images/project-images/card.png"
                 alt="Customer Management System"
-                objectFit="cover"
                 className="rounded-lg inline-block items-center"
                 height={1000}
                 width={500}
@@ -34,7 +32,6 @@ const ProjectBannerSection = () => {
               <Image
                 src="/images/project-images/cms.png"
                 alt="Customer Management System"
-                objectFit="cover"
                 className="rounded-lg inline-block items-center"
                 height={1000}
                 width={500}
@@ -46,7 +43,6 @@ const ProjectBannerSection = () => {
               <Image
                 src="/images/project-images/sketching.png"
                 alt="Customer Management System"
-                objectFit="cover"
                 className="rounded-lg inline-block items-center"
                 height={1000}
                 width={500}
@@ -58,7 +54,6 @@ const ProjectBannerSection = () => {
               <Image
                 src="/images/project-images/portfolio1.png"
                 alt="Customer Management System"
-                objectFit="cover"
                 className="rounded-lg inline-block items-center"
                 height={1000}
                 width={500}
@@ -70,7 +65,6 @@ const ProjectBannerSection = () => {
               <Image
                 src="/images/project-images/flyer.jpg"
                 alt="Customer Management System"
-                objectFit="cover"
                 className="rounded-lg inline-block items-center"
                 height={1000}
                 width={500}
@@ -82,7 +76,6 @@ const ProjectBannerSection = () => {
               <Image
                 src="/images/project-images/portfolio.png"
                 alt="Customer Management System"
-                objectFit="cover"
                 className="rounded-lg inline-block items-center"
                 height={1000}
                 width={500}

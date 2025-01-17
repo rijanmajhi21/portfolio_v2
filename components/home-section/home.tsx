@@ -54,6 +54,13 @@ const Home: FunctionComponent = () => {
             </span>
           </div>
         </div>
+        {/* <Image
+        src="/images/img1.png"
+        alt="Profile"
+        height={1200}
+        width={600}
+        className="absolute"
+      /> */}
         <div className="flex flex-col sm:flex-row items-center bottom-24 gap-5 transform z-10">
           <Button variant="dark" text="Hire as artist" href="arts" />
           <Button variant="light" text="Hire as developer" href="/projects" />
