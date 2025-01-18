@@ -34,7 +34,7 @@ const PojectSection: FunctionComponent = () => {
             </span>
           </div>
         </div>
-        <div className="flex justify-between gap-8">
+        <div className="flex justify-between gap-2 md:gap-8">
           {images.map((image, index) => (
             <ProjectContainer key={index} src={image.src} alt={image.alt} title={image.title} link={image.link} />
           ))}
