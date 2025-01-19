@@ -33,7 +33,7 @@ const Header: FunctionComponent = () => {
   const links = [
     { href: "/projects", text: "Projects" },
     { href: "/arts", text: "Arts" },
-    { href: "/contact", text: "Contact" },
+    { href: "/about", text: "About" },
   ];
 
   const mobileLinks = [...links, { href: "/about", text: "About" }];
@@ -60,7 +60,7 @@ const Header: FunctionComponent = () => {
           ))}
           <Button
             variant="dark"
-            text="rijanmajhi21@gmail.com"
+            text="Get in Touch"
             href="/contact"
           />
         </div>

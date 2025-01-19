@@ -26,8 +26,8 @@ const PojectSection: FunctionComponent = () => {
 
   return (
     <section className="h-auto bg-neutral-900">
-      <div className="c-container flex flex-col py-20 gap-6">
-        <div className="flex justify-between pb-6">
+      <div className="c-container flex flex-col py-10 md:py-20 gap-6">
+        <div className="flex justify-between pb-2 md:pb-6">
           <div className="justify-start">
             <span className="font-anton text-[3vw] text-pure-white">
               Latest Projects

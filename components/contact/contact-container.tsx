@@ -1,3 +1,4 @@
+import { GITHUB_LINK, LINKEDIN_LINK } from "@/constants/links";
 import { FunctionComponent } from "react";
 import Button from "../commons/buttons/button";
 
@@ -17,12 +18,15 @@ const ContactContainer: FunctionComponent = () => {
         </p>
       </div>
       <div className="flex gap-5 pb-3 md:pb-6">
-        <Button variant="light" text="Facebook" href="" />
-        <Button variant="dark" text="Linkedin" href="" />
+        <Button variant="light" text="rijanmajhi21@gmail.com" href="" />
       </div>
-      <div className="flex gap-5">
+      <div className="flex gap-5 pb-3 md:pb-6">
+        <Button variant="light" text="Facebook" href="" />
+        <Button variant="dark" text="Linkedin" href={LINKEDIN_LINK} />
+      </div>
+      <div className="flex gap-5 pb-3 md:pb-6">
         <Button variant="dark" text="Instagram" href="" />
-        <Button variant="light" text="View GitHub" href="" />
+        <Button variant="light" text="View GitHub" href={GITHUB_LINK} />
       </div>
     </div>
   );
