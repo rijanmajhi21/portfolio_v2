@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import ProjectContainer from "./project-container";
 
-const PojectSection: FunctionComponent = () => {
+const ProjectSection: FunctionComponent = () => {
   const images = [
     {
       src: "/images/project-images/cms3.png",
@@ -21,7 +21,6 @@ const PojectSection: FunctionComponent = () => {
       title: "Portfolio",
       link: "",
     },
-    
   ];
 
   return (
@@ -36,7 +35,13 @@ const PojectSection: FunctionComponent = () => {
         </div>
         <div className="flex justify-between gap-2 md:gap-8">
           {images.map((image, index) => (
-            <ProjectContainer key={index} src={image.src} alt={image.alt} title={image.title} link={image.link} />
+            <ProjectContainer
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              title={image.title}
+              link={image.link}
+            />
           ))}
         </div>
       </div>
@@ -44,4 +49,4 @@ const PojectSection: FunctionComponent = () => {
   );
 };
 
-export default PojectSection;
+export default ProjectSection;

@@ -11,11 +11,11 @@ const Home: FunctionComponent = () => {
   return (
     <section className="c-container mx-auto top-24 xs:top-28 sm:top-32 md:top-[20%] px-0 left-0 right-0 flex sm:flex-none justify-center items-center fixed lg:inset-[0%] overflow-hidden">
       <div className="flex flex-col gap-[5%] items-center justify-center pb-[78%] xs:pb-[40%] sm:pb-[20%] md:pb-0 px-4 mx-0 lg:mx-auto lg:py-1/2">
-        <div className="flex flex-col mb-4 overflow-hidden">
+        <div className="flex flex-col mb-6 overflow-hidden">
           <span className="text-body-base md:text-body-big-bold lg:text-title-5 text-center mt-8">
             👋, my name is Rijan and I am a frontend developer
           </span>
-          <div className="flex flex-col mt-5 text-center w-full pb-2">
+          <div className="flex flex-col pt-2 text-center w-full pb-2">
             <Link href="/projects">
               <span
                 className={clsx(
@@ -48,7 +48,7 @@ const Home: FunctionComponent = () => {
               </span>
             </Link>
           </div>
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center md:justify-center">
             <span className="text-body-base md:text-body-base-bold lg:text-title-5">
               based in Kathmandu, Nepal.
             </span>
