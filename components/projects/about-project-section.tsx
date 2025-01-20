@@ -36,11 +36,11 @@ const TopSection: FunctionComponent = () => {
       </div>
       <div className="flex relative w-full md:w-1/2 mx-auto items-center justify-center">
         <Image
-          src="/images/project-images/laptop.png"
+          src="/images/project-images/laptops.png"
           alt="Laptop"
           className="rounded-lg inline-block items-center"
-          height={500}
-          width={500}
+          height={1200}
+          width={600}
         />
       </div>
     </div>
