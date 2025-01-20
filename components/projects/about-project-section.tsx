@@ -14,8 +14,8 @@ export default AboutProjectSection;
 
 const TopSection: FunctionComponent = () => {
   return (
-    <div className="c-container flex gap-16 py-24 items-center justify-center mx-auto">
-      <div className="flex flex-col items-start w-[50%] justify-center">
+    <div className="c-container flex flex-col-reverse md:flex-row gap-4 md:gap-16 py-10 md:py-24 items-center justify-center mx-auto">
+      <div className="flex flex-col text-center md:text-start w-full md:w-1/2 justify-center">
         <h5 className="uppercase">Seamless Web Experiences</h5>
         <div className="mt-0 md:mb-4 mb-3">
           <span className="text-center md:text-start font-anton text-[5vw] md:text-[3vw] lg:text-[2.5vw]">
@@ -34,7 +34,7 @@ const TopSection: FunctionComponent = () => {
           </p>
         </div>
       </div>
-      <div className="flex relative w-[50%] mx-auto items-center justify-center">
+      <div className="flex relative w-full md:w-1/2 mx-auto items-center justify-center">
         <Image
           src="/images/project-images/laptop.png"
           alt="Laptop"
@@ -49,8 +49,8 @@ const TopSection: FunctionComponent = () => {
 
 const BottomSection: FunctionComponent = () => {
   return (
-    <div className="c-container flex gap-16 py-24 items-center justify-center mx-auto">
-      <div className="flex relative w-[40%] mx-auto items-center justify-center">
+    <div className="c-container flex flex-col md:flex-row gap-4 md:gap-16 py-10 md:py-24 items-center justify-center mx-auto">
+      <div className="flex relative w-[80%] md:w-[40%] mx-auto items-center justify-center">
         <Image
           src="/images/project-images/mobile.png"
           alt="Laptop"
@@ -59,7 +59,7 @@ const BottomSection: FunctionComponent = () => {
           width={500}
         />
       </div>
-      <div className="flex flex-col items-start w-[60%] justify-center">
+      <div className="flex flex-col text-center md:text-start w-full md:w-[60%] justify-center">
         <h5 className="uppercase">Creative Excellence</h5>
         <div className="mt-0 md:mb-4 mb-3">
           <span className="text-center md:text-start font-anton text-[5vw] md:text-[3vw] lg:text-[2.5vw]">
