@@ -17,16 +17,16 @@ const ContactContainer: FunctionComponent = () => {
           opportunity to connect, collaborate, and create something meaningful.
         </p>
       </div>
-      <div className="flex gap-5 pb-3 md:pb-6">
+      <div className="hidden md:flex gap-5 pb-3 md:pb-6">
         <Button variant="light" text="rijanmajhi21@gmail.com" href="" />
       </div>
       <div className="flex gap-5 pb-3 md:pb-6">
         <Button variant="light" text="Facebook" href="" />
-        <Button variant="dark" text="Linkedin" href={LINKEDIN_LINK} />
+        <Button variant="dark" text="GitHub" href={GITHUB_LINK} />
       </div>
       <div className="flex gap-5 pb-3 md:pb-6">
         <Button variant="dark" text="Instagram" href="" />
-        <Button variant="light" text="View GitHub" href={GITHUB_LINK} />
+        <Button variant="light" text="Linkedin" href={LINKEDIN_LINK} />
       </div>
     </div>
   );
