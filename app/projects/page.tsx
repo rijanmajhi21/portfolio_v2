@@ -1,8 +1,9 @@
 import Header from "@/components/header/header";
+import AboutProjectSection from "@/components/projects/about-project-section";
 import ProjectBanner from "@/components/projects/project-banner";
 import ProjectBannerSection from "@/components/projects/project-banner-section";
 import BottomBanner from "@/components/projects/Project-bottom-banner";
-import PojectSection from "@/components/projects/project-section";
+import ProjectSection from "@/components/projects/project-section";
 import WhyProjectSection from "@/components/projects/why-project-section";
 
 export const metadata = {
@@ -17,10 +18,11 @@ const ProjectPage = () => {
       <>
         <div className="flex flex-col md:pb-72">
           <ProjectBanner />
-          <ProjectBannerSection/>
+          <ProjectBannerSection />
         </div>
         <WhyProjectSection />
-        <PojectSection />
+        <ProjectSection />
+        <AboutProjectSection />
         <BottomBanner />
       </>
     </section>
