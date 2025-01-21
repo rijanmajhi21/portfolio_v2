@@ -36,7 +36,7 @@ const Header: FunctionComponent = () => {
     { href: "/about", text: "About" },
   ];
 
-  const mobileLinks = [...links, { href: "/about", text: "About" }];
+  const mobileLinks = [...links, { href: "/contact", text: "Contact" }];
 
   return (
     <div className="w-full fixed top-0 left-0 right-0 bg-pure-white py-6 z-[999]">
@@ -58,11 +58,7 @@ const Header: FunctionComponent = () => {
           {links.map((link, index) => (
             <NavLink key={index} href={link.href} text={link.text} />
           ))}
-          <Button
-            variant="dark"
-            text="Get in Touch"
-            href="/contact"
-          />
+          <Button variant="dark" text="Get in Touch" href="/contact" />
         </div>
 
         {/* Mobile Menu Icon */}
