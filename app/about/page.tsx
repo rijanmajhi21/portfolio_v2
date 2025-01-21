@@ -1,3 +1,5 @@
+import AboutBannerSection from "@/components/about/about-banner-section";
+import AboutSection from "@/components/about/about-section";
 import Header from "@/components/header/header";
 
 export const metadata = {
@@ -9,9 +11,8 @@ const AboutPage = () => {
   return (
     <main className="mx-auto">
       <Header />
-      <>
-        <h1>Under maintenance</h1>
-      </>
+      <AboutBannerSection />
+      <AboutSection />
     </main>
   );
 };

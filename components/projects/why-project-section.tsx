@@ -7,7 +7,7 @@ const WhyProjectSection: FunctionComponent = () => {
         You need more <br />
         than just a website.
       </h1>
-      <div className="text-center md:text-start flex flex-col gap-7 text-body-base md:text-body-big">
+      <div className="text-center md:text-start flex flex-col gap-7 text-body-base">
         <p>
           You need an engaging, high-performing digital presence that converts
           visitors into loyal customers.

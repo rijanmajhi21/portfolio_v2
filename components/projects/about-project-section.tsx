@@ -22,7 +22,7 @@ const TopSection: FunctionComponent = () => {
             Design Meets Functionality
           </span>
         </div>
-        <div className="mb-6 flex flex-col gap-4 text-center md:text-start text-body-base md:text-body-big">
+        <div className="mb-6 flex flex-col gap-4 text-center md:text-start text-body-base">
           <p className="">
             A great website is more than just looks—it&apos;s about creating
             meaningful user experiences.
@@ -34,7 +34,7 @@ const TopSection: FunctionComponent = () => {
           </p>
         </div>
       </div>
-      <div className="flex relative w-full md:w-1/2 mx-auto items-center justify-center">
+      <div className="flex relative w-[80%] md:w-1/2 mx-auto items-center justify-center">
         <Image
           src="/images/project-images/laptops.png"
           alt="Laptop"
@@ -66,7 +66,7 @@ const BottomSection: FunctionComponent = () => {
             Where Imagination Meets Creativity
           </span>
         </div>
-        <div className="mb-6 flex flex-col gap-4 text-center md:text-start text-body-base md:text-body-big">
+        <div className="mb-6 flex flex-col gap-4 text-center md:text-start text-body-base">
           <p>
             Every masterpiece begins with a vision, and I aim to bring that
             vision to life.
