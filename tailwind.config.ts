@@ -42,9 +42,9 @@ const config: Config = {
       colors: {
         // ! Legacy Colors
         baseBlack: "#2A3439",
-        primary: "#3eb368",
-        primaryDark: "#37a05d",
-        primaryLight: "#5dc783",
+        primary: "",
+        primaryDark: "",
+        primaryLight: "",
         blue: "#1C98F7",
         blueDark: "#088CF1",
         textGray: "#909090",
@@ -66,12 +66,12 @@ const config: Config = {
         translucent: "rgba(255, 255, 255, 0.24)",
 
         // * Primary
-        "primary-clicked": "#256b3e",
-        "primary-hover": "#328f53",
-        "primary-default": "#3eb368",
-        "primary-light": "#b2e1c3",
-        "primary-lighter": "#d8f0e1",
-        "primary-lightest": "#ecf8f0",
+        "primary-clicked": "",
+        "primary-hover": "",
+        "primary-default": "",
+        "primary-light": "",
+        "primary-lighter": "",
+        "primary-lightest": "",
 
         // * Secondary
         "secondary-clicked": "#115b94",
@@ -453,12 +453,12 @@ const config: Config = {
         },
         ".text-stroke": {
           color: "transparent",
-          WebkitTextStroke: "1px #525252",  // Stroke color
+          WebkitTextStroke: "1px #525252", // Stroke color
           "-webkit-background-clip": "text",
         },
         ".group:hover .text-stroke": {
-          WebkitTextStroke: "1px #000",  // Black stroke when hovered
-          color: "black",  // Text color when hovered
+          WebkitTextStroke: "1px #000", // Black stroke when hovered
+          color: "black", // Text color when hovered
         },
       });
     }),
