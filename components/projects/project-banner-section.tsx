@@ -30,8 +30,8 @@ const ProjectBannerSection = () => {
         <div className="transform translate-y-[1.42391em] scale-100 [transform-style:preserve-3d] [will-change:transform] top-[8.89em] rounded-lg relative overflow-hidden mx-2.5 items-center justify-center shadow-2xl">
           <Link href="">
             <Image
-              src="/images/project-images/cms.png"
-              alt="Customer Management System"
+              src="/images/project-images/wahhcoffee.png"
+              alt="Wahh Coffee"
               className="rounded-lg inline-block items-center"
               height={1000}
               width={500}
@@ -52,8 +52,8 @@ const ProjectBannerSection = () => {
         <div className="transform translate-y-[1.42391em] scale-100 [transform-style:preserve-3d] [will-change:transform] top-[8.89em] rounded-lg relative overflow-hidden mx-2.5 items-center justify-center shadow-2xl">
           <Link href="">
             <Image
-              src="/images/project-images/darvis.png"
-              alt="Darvis"
+              src="/images/project-images/sketching-hub.png"
+              alt="Hub"
               className="rounded-lg inline-block items-center"
               height={1000}
               width={500}

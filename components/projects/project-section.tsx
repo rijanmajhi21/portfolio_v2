@@ -4,9 +4,9 @@ import ProjectContainer from "./project-container";
 const ProjectSection: FunctionComponent = () => {
   const images = [
     {
-      src: "/images/project-images/cms3.png",
-      alt: "Customer Management System",
-      title: "Customer Management System",
+      src: "/images/project-images/project-coffee.png",
+      alt: "Wahh Coffee",
+      title: "Wahh Coffee",
       link: "",
     },
     {
