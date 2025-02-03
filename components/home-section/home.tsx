@@ -13,7 +13,7 @@ const Home: FunctionComponent = () => {
       <div className="flex flex-col gap-[5%] items-center justify-center pb-[78%] xs:pb-[40%] sm:pb-[20%] md:pb-0 px-4 mx-0 lg:mx-auto lg:py-1/2">
         <div className="flex flex-col mb-6 overflow-hidden">
           <span className="text-body-base md:text-body-big-bold lg:text-title-5 text-center mt-8">
-            👋, my name is Rijan and I am a frontend developer
+            👋, my name is Rijan Majhi and I am a frontend developer
           </span>
           <div className="flex flex-col pt-2 text-center w-full pb-2">
             <Link href="/projects">

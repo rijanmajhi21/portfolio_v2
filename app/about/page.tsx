@@ -1,5 +1,6 @@
 import AboutBannerSection from "@/components/about/about-banner-section";
 import AboutSection from "@/components/about/about-section";
+import SkillSection from "@/components/about/skills-section";
 import Header from "@/components/header/header";
 
 export const metadata = {
@@ -13,6 +14,7 @@ const AboutPage = () => {
       <Header />
       <AboutBannerSection />
       <AboutSection />
+      <SkillSection />
     </main>
   );
 };
