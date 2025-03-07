@@ -1,20 +1,25 @@
-"use client";
-
+import { FunctionComponent, ReactNode } from "react";
 import Link from "next/link";
-import { FunctionComponent } from "react";
+import clsx from "clsx";
 
 interface ButtonProps {
   variant?: "dark" | "light" | "transparent";
   text: string;
   href?: string;
+  target?: string;
+  rel?: string;
   className?: string;
+  children?: ReactNode;
 }
 
-const Button: FunctionComponent<ButtonProps> = ({
+const LinkButton: FunctionComponent<ButtonProps> = ({
   variant = "dark",
   text,
   href = "",
+  target,
+  rel,
   className = "",
+  children,
 }) => {
   const commonStyles =
     "flex h-auto text-center px-6 py-3 rounded-md items-center justify-center cursor-pointer transition-all duration-300 hover:shadow-base whitespace-nowrap";
@@ -29,11 +34,13 @@ const Button: FunctionComponent<ButtonProps> = ({
   return (
     <Link
       href={href}
-      className={`${commonStyles} ${variantStyles} ${className}`}
+      target={target}
+      rel={rel}
+      className={clsx(commonStyles, variantStyles, className)}
     >
-      <span className="text-body-base">{text}</span>
+      {children || <span className="text-body-base">{text}</span>}
     </Link>
   );
 };
 
-export default Button;
+export default LinkButton;
