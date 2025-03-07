@@ -33,7 +33,7 @@ const SkillCard: FunctionComponent<SkillCardProps> = ({
         <div className="py-2 font-anton md:text-start lg:text-title-4 md:text-body-base">
           <span>{skillTitle}</span>
         </div>
-        <div className="text-body-big py-2">
+        <div className="text-body-base md:text-body-big py-2">
           <p>{description}</p>
         </div>
       </div>
