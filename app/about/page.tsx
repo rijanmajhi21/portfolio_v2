@@ -10,12 +10,12 @@ export const metadata = {
 
 const AboutPage = () => {
   return (
-    <main className="mx-auto">
+    <>
       <Header />
       <AboutBannerSection />
       <AboutSection />
       <SkillSection />
-    </main>
+    </>
   );
 };
 

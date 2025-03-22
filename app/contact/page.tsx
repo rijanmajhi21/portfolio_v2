@@ -9,13 +9,13 @@ export const metadata = {
 
 const ContactPage = () => {
   return (
-    <main className="c-container mx-auto">
+    <section className="c-container mx-auto">
       <Header />
       <div className="flex flex-col relative md:flex-none justify-between gap-8">
         <ContactContainer />
         <ContactForm />
       </div>
-    </main>
+    </section>
   );
 };
 
